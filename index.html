@@ -1,0 +1,52 @@
+<doctype html>
+	<html lang="en">
+	<head>
+		<title>
+		Lottery Generator!!
+		</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+			
+	</head>
+
+	<body>
+		<div class="jumbotron">
+  <h1 class="display-3 text-center">Generate Lottery!!</h1>
+  <div class="text-center">
+  	<button id="clicker" class="btn btn-primary"><h1>?</h1></button>
+  </div>
+</div>
+
+<div id="container">
+<!-- 	making dummy lottery numbers in a div
+ -->	<div class="text-center">
+ 	<div id="numbers" class="text-center"></div>
+</div>
+
+
+		
+
+
+
+<script type="text/javascript">
+
+
+$("#clicker").click(function(){
+	var lottonumber="";
+	for(var i=0; i<9; i++){
+		var random=Math.floor(Math.random()*9)+1;
+		lottonumber=random+lottonumber;
+	}
+$("#numbers").append("<h3>"+lottonumber+"</h1>"+"<hr>");
+
+});
+
+</script>
+
+
+
+	</body>
+	</html>
